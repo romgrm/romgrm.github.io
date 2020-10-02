@@ -1,3 +1,10 @@
+/*body{
+    background-image:url(https://images5.alphacoders.com/481/481903.png);
+    background-attachment: fixed;
+    background-size: cover;
+}*/
+
+
 #header {
     height: 50px;
     width: 100%;
@@ -25,9 +32,7 @@
 }                      
 
 .photoCv{
-    width: 300px; 
-    height: 200px;
-    border-radius: 150px;
+    border-radius: 50%;
     border: solid black 2px;
 }
 
@@ -38,36 +43,48 @@
     grid-template: repeat(4, 1fr)  / repeat(2, 2fr);
 }
 
+.zoom{
+    transition: transform .5s ease;
+    border-radius: 10px;
+}
+
+.zoom:hover{
+    box-shadow: 0px 0px 15px background;
+    transform: scale(1.02);
+}
+
+
 .photo {
     grid-column: 1 / 3;
     justify-self: center;
+    margin-top: 20px;
 }
 
 .nom{
     grid-column: 1 / 3;
-    justify-self: center;
-  
-    
+    justify-self: center;  
 }
 
 
-list style
-.experiences{
-    grid-row: 3 / 6; 
-  
+.experiences {
+    grid-row: 3 / 6;
 }
+
 
 .profil{
-    
+    transition: transform .5s ease;
 }
+
 
 .competences{
     grid-column: 1 / 3;
+    background-color: rgba(199, 199, 199, 0.1);
 }
 
 .formations{
     grid-column: 1 / 3;
 }
+
 
 .titre{
     font-family: 'Poppins', sans-serif;
@@ -89,6 +106,7 @@ list style
     font-weight: 200;
     text-align: center; 
     background-color: rgb(231, 107, 107);
+    border-radius: 5px;
 }
 
 
@@ -117,4 +135,6 @@ ul li{
     font-weight: lighter;
     text-align: center;
 }
+
+
 
