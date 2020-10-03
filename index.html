@@ -8,25 +8,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header id="header">
+  <!--<header id="header">
     <img class="mail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDI2LjY2NyA0MjYuNjY3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MjYuNjY3IDQyNi42Njc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMzg0LDQyLjY2N0g0Mi42NjdjLTIzLjU3MywwLTQyLjQ1MywxOS4wOTMtNDIuNDUzLDQyLjY2N0wwLDM0MS4zMzNDMCwzNjQuOTA3LDE5LjA5MywzODQsNDIuNjY3LDM4NEgzODQNCgkJCWMyMy41NzMsMCw0Mi42NjctMTkuMDkzLDQyLjY2Ny00Mi42Njd2LTI1NkM0MjYuNjY3LDYxLjc2LDQwNy41NzMsNDIuNjY3LDM4NCw0Mi42Njd6IE0zODQsMTI4TDIxMy4zMzMsMjM0LjY2N0w0Mi42NjcsMTI4DQoJCQlWODUuMzMzTDIxMy4zMzMsMTkyTDM4NCw4NS4zMzNWMTI4eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
     <img class="tel" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDY5LjMzMyA0NjkuMzMzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NjkuMzMzIDQ2OS4zMzM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMzQxLjIyNywwLjIxM0wxMjcuODkzLDBDMTA0LjMyLDAsODUuNDQsMTkuMDkzLDg1LjQ0LDQyLjY2N3YzODRjMCwyMy41NzMsMTguODgsNDIuNjY3LDQyLjQ1Myw0Mi42NjdoMjEzLjMzMw0KCQkJYzIzLjU3MywwLDQyLjY2Ny0xOS4wOTMsNDIuNjY3LTQyLjY2N3YtMzg0QzM4My44OTMsMTkuMDkzLDM2NC44LDAuMjEzLDM0MS4yMjcsMC4yMTN6IE0zNDEuMjI3LDM4NEgxMjcuODkzVjg1LjMzM2gyMTMuMzMzVjM4NHoNCgkJCSIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
     <img class="home" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDI2LjY2NyA0MjYuNjY3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MjYuNjY3IDQyNi42Njc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxwYXRoIGQ9Ik0yMTMuMzMzLDEwNi42NjdWMjEuMzMzSDB2Mzg0aDQyNi42NjdWMTA2LjY2N0gyMTMuMzMzeiBNODUuMzMzLDM2Mi42NjdINDIuNjY3VjMyMGg0Mi42NjdWMzYyLjY2N3ogTTg1LjMzMywyNzcuMzMzDQoJCQkJSDQyLjY2N3YtNDIuNjY3aDQyLjY2N1YyNzcuMzMzeiBNODUuMzMzLDE5Mkg0Mi42Njd2LTQyLjY2N2g0Mi42NjdWMTkyeiBNODUuMzMzLDEwNi42NjdINDIuNjY3VjY0aDQyLjY2N1YxMDYuNjY3eg0KCQkJCSBNMTcwLjY2NywzNjIuNjY3SDEyOFYzMjBoNDIuNjY3VjM2Mi42Njd6IE0xNzAuNjY3LDI3Ny4zMzNIMTI4di00Mi42NjdoNDIuNjY3VjI3Ny4zMzN6IE0xNzAuNjY3LDE5MkgxMjh2LTQyLjY2N2g0Mi42NjdWMTkyeg0KCQkJCSBNMTcwLjY2NywxMDYuNjY3SDEyOFY2NGg0Mi42NjdWMTA2LjY2N3ogTTM4NCwzNjIuNjY3SDIxMy4zMzNWMzIwSDI1NnYtNDIuNjY3aC00Mi42Njd2LTQyLjY2N0gyNTZWMTkyaC00Mi42Njd2LTQyLjY2N0gzODQNCgkJCQlWMzYyLjY2N3oiLz4NCgkJCTxyZWN0IHg9IjI5OC42NjciIHk9IjE5MiIgd2lkdGg9IjQyLjY2NyIgaGVpZ2h0PSI0Mi42NjciLz4NCgkJCTxyZWN0IHg9IjI5OC42NjciIHk9IjI3Ny4zMzMiIHdpZHRoPSI0Mi42NjciIGhlaWdodD0iNDIuNjY3Ii8+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
-</header>
+</header>-->
 
-  <main>
+  <main>   
       <div class="grid">
-        <class class="photo">
-           <img class="photoCv" src="./photo_cv.jpg" alt="photo_cv"/>
-        </class>
+        <div class="identite">
+            <h1 class="nomDeFamille">GREAUME</h1>
+            <h1 class="prenom">ROMAIN</h1>
+            <h2 class="statut">DEV JUNIOR</h2>
+        </div>
+        
+        <!--<div class="photo">
+            <img class="photoCv" src="./photo_cv.jpg" alt="photo_cv"/>
+         </div>-->
 
-            <div class="nom">
-                <h1 class="titre">GREAUME ROMAIN</h1>
-                <h2 class="sousTitre">DEV JUNIOR</h2>
-            </div>
+         <div class="profil zoom">
+            <h2 class="Categories">PROFIL</h2>
+            <p>Passionné par le numérique et le multimédia, je fais mes premiers pas dans ces domaines
+            en 2014 pour un projet de communication dans l'entreprise ou j'effectuais mon stage.
+            Je décide alors de me réorienter afin de poursuivre mes études dans le web et la communication.
+            Acquérant de plus en plus de connaissances, je me dirige vers le milieu du web pour mon master,
+            tout en continuant de travailler dans la vidéo et le graphisme. Au bout de plusieurs alternances,
+            je me rends compte que mon côté technique est bien meilleur que mon côté artistique, et que je préfère
+            coder que dessiner ! Je me forme donc en programmation, notamment dans la 3D, ce qui me permet de garder 
+            un pied dans le milieu de la création. Après plusieurs semaines de réflexion, je comprends que le 
+            milieu de la 3D est saturé, et qu'il est préférable de retourner à mes débuts, le web.
+            </p>
+        </div>
 
             <div class="experiences zoom">
-                <h2 class="Categories">EXPERIENCES</h2>
+                <h2 class="Categories">EXPÉRIENCES</h2>
                 <article>
                     <h3><em>2016/2017</em> - Bazman Prod - Quimper</h3>
                     <ul>
@@ -36,12 +51,13 @@
                     </ul>
                 </article>
                 <article>
-                    <h3><em>2017/2018></em> - Yves Rocher France - Rennes</h3>
+                    <h3><em>2017/2018</em> - Yves Rocher France - Rennes</h3>
                     <ul>
                         <li>Graphisme / Print</li>
                         <li>Motion design</li>
                         <li>Captation d'images</li>
                     </ul>
+                </article>
                 <article>
                     <h3><em>2018/2019</em> - Suez France - Rennes</h3>
                     <ul>
@@ -50,22 +66,8 @@
                 </article>
             </div>
 
-            <div class="profil zoom">
-                <h2 class="Categories">PROFIL</h2>
-                <p>Passionné par le numérique et le multimédia, je fais mes premiers pas dans ces domaines
-                en 2014 pour un projet de communication dans l'entreprise ou j'effectuais mon stage.
-                Je décide alors de me réorienter afin de poursuivre mes études dans le web et la communication.
-                Acquérant de plus en plus de connaissances, je me dirige vers le milieu du web pour mon master,
-                tout en continuant de travailler dans la vidéo et le graphisme. Au bout de plusieurs alternances,
-                je me rends compte que mon côté technique est bien meilleur que mon côté artistique, et que je préfère
-                coder que dessiner ! Je me forme donc en programmation, notamment dans la 3D, ce qui me permet de garder 
-                un pied dans le milieu de la création. Après plusieurs semaines de réflexion, je comprends que le 
-                milieu de la 3D est saturé, et qu'il est préférable de retourner à mes débuts, le web.
-                </p>
-            </div>
-
             <div class="competences zoom">
-               <h2 class="Categories">COMPETENCES</h2>
+               <h2 class="Categories">COMPÉTENCES</h2>
                 <ul>
                     <li>Création print</li>
                     <li>Création vidéo</li>
